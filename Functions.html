@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+    <link rel="stylesheet" href="Function.css">
+  </head>
+  <body>
+    <p>
+      Guessing Game
+    </p>
+
+    <button onclick="
+      function1();
+
+      let result = '';
+
+      if (computerMove === 'cup1') {
+        result = 'You guessed Correct.';
+      }
+      else {
+        result = 'You guessed Wrong.'
+      }
+      alert(`You picked Cup1. It\'s ${computerMove}. ${result}`);
+      
+    ">Cup1</button>
+
+    <button onclick="
+      function1();
+
+      let result = '';
+
+      if (computerMove === 'cup2') {
+        result = 'You guessed Correct.';
+      }
+      else {
+        result = 'You guessed Wrong.'
+      }
+      alert(`You picked Cup2. It\'s ${computerMove}. ${result}`);
+    ">Cup2</button>
+
+    <button onclick="
+      function1();
+
+      let result = '';
+
+      if (computerMove === 'cup3') {
+        result = 'You guessed Correct.';
+      }
+      else {
+        result = 'You guessed Wrong.'
+      }
+
+      alert(`You picked Cup3. It\'s ${computerMove}. ${result}`);
+    ">Cup3</button>
+   
+    <script>    
+    
+      let computerMove = '';
+     
+      function function1() {  
+        const chanceball = Math.random();  
+
+      if (chanceball >= 0 && chanceball < 1 / 3) {
+        computerMove = 'cup1';
+      }
+      else if (chanceball > 1 / 3 && chanceball < 2 / 3) {
+        computerMove = 'cup2';
+      }
+      else if (chanceball > 2 / 3 && chanceball < 1) {
+        computerMove = 'cup3';
+      }
+    }
+       
+    </script>
+  </body>
+</html>
